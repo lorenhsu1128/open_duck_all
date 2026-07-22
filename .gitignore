@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# open_duck_all — workspace 層級的 .gitignore
+#
+# 這一層目前只是一個「並排放四個獨立 repo」的工作區，本身不追蹤那四個 repo
+# 的內容（它們各自有自己的 .git 與 remote）。
+#
+# 若之後要把它們改成 git submodule，請先移除下面「子專案」區塊，再執行：
+#   git submodule add https://github.com/lorenhsu1128/Open_Duck_Mini.git
+#   (其餘三個同理)
+# ---------------------------------------------------------------------------
+
+# --- 子專案（各自獨立版控，不納入本層 repo） ---
+/Open_Duck_Mini/
+/Open_Duck_Playground/
+/Open_Duck_reference_motion_generator/
+/Open_Duck_Mini_Runtime/
+
+# --- 跨專案共用的中間產物（若你在本層做資料交換用的暫存區） ---
+/recordings/
+/motions/
+/policies/
+/logs/
+/checkpoints/
+*.onnx
+*.pkl
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+uv.lock
+
+# --- JAX / MuJoCo / 訓練 ---
+runs/
+tensorboard/
+wandb/
+*.mp4
+mujoco_saved_obs.pkl
+
+# --- 編輯器 / 作業系統 ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
