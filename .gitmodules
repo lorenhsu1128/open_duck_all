@@ -1,0 +1,16 @@
+[submodule "Open_Duck_Mini"]
+	path = Open_Duck_Mini
+	url = https://github.com/lorenhsu1128/Open_Duck_Mini.git
+	branch = v2
+[submodule "Open_Duck_reference_motion_generator"]
+	path = Open_Duck_reference_motion_generator
+	url = https://github.com/lorenhsu1128/Open_Duck_reference_motion_generator.git
+	branch = main
+[submodule "Open_Duck_Playground"]
+	path = Open_Duck_Playground
+	url = https://github.com/lorenhsu1128/Open_Duck_Playground.git
+	branch = main
+[submodule "Open_Duck_Mini_Runtime"]
+	path = Open_Duck_Mini_Runtime
+	url = https://github.com/lorenhsu1128/Open_Duck_Mini_Runtime.git
+	branch = v2
